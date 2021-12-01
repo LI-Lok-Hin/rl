@@ -23,15 +23,15 @@ To run the examples, open command prompt at the base directory (same directory a
 ```cmd
 python examples/atari_ddqn.py  --gym-id BreakoutNoFrameskip-v4
 ```
-2. Resume to training for agent stored as rl/trained/training_agent:
+2. Resume to training for agent stored as rl-main/trained/training_agent:
 ```cmd
 python examples/train_folder.py --folder-name training_agent
 ```
-3. Evaluate the performance of agent stored as rl/trained/training_agent by ploting graph of rewards over time steps, and save video of performance of agent with fps of 15.
+3. Evaluate the performance of agent stored as rl-main/trained/training_agent by ploting graph of rewards over time steps, and save video of performance of agent with fps of 15.
 ```cmd
 python examples/evaluate.py --folder-name training_agent --fps 15
 ```
-4. Plot the reward over time steps for two agents, rl/trained/DDQN and rl/trained/PPO, on the same graph for comparing their performance.
+4. Plot the reward over time steps for two agents, rl-main/trained/DDQN and rl-main/trained/PPO, on the same graph for comparing their performance.
 ```cmd
 python examples/plot_metrics.py --folder-names DDQN PPO
 ```
@@ -48,7 +48,7 @@ Please refer to the files or --help flag for more details about arguments availa
 	* Transformer
 
 ## Agent file structure
-Agent is saved as a folder under rl/trained with given folder name or auto-generated default name based on environment name and reinforcement learning algorithm name. rl/trained folder will be auto-generated if it does not exist.
+Agent is saved as a folder under rl-main/trained with given folder name or auto-generated default name based on environment name and reinforcement learning algorithm name. rl-main/trained folder will be auto-generated if it does not exist.
 The agent folder including:
 * Metrics folder including:
 	* Average episode rewards
@@ -62,7 +62,7 @@ The agent folder including:
 
 Here is a brief description of the file structure of the project:
 ```
-rl
+rl-main
 ├── examples
 │    └─ ...
 ├── rl
