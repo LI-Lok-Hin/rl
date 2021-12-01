@@ -15,6 +15,7 @@ This is a self-learning project of Deep Reinforcement Learning. The highlight fe
 * Tensorflow-probability 0.12.2
 * OpenAI gym 0.18.0
 * Matplotlib 3.1.1
+
 Please note that you may need to install extra package or files for running some gym environment (such as Atari environment). For more details, please refer to [OpenAI Gym](https://github.com/openai/gym).
 
 ## Examples
@@ -27,11 +28,11 @@ python examples/atari_ddqn.py  --gym-id BreakoutNoFrameskip-v4
 ```cmd
 python examples/train_folder.py --folder-name training_agent
 ```
-3. Evaluate the performance of agent stored as rl-main/trained/training_agent by ploting graph of rewards over time steps, and save video of performance of agent with fps of 15.
+3. Evaluate the performance of agent stored as rl-main/trained/training_agent by ploting graph of rewards over time steps, and save video of performance of agent with fps of 15:
 ```cmd
 python examples/evaluate.py --folder-name training_agent --fps 15
 ```
-4. Plot the reward over time steps for two agents, rl-main/trained/DDQN and rl-main/trained/PPO, on the same graph for comparing their performance.
+4. Plot the reward over time steps for two agents, rl-main/trained/DDQN and rl-main/trained/PPO, on the same graph for comparing their performance:
 ```cmd
 python examples/plot_metrics.py --folder-names DDQN PPO
 ```
@@ -49,6 +50,7 @@ Please refer to the files or --help flag for more details about arguments availa
 
 ## Agent file structure
 Agent is saved as a folder under rl-main/trained with given folder name or auto-generated default name based on environment name and reinforcement learning algorithm name. rl-main/trained folder will be auto-generated if it does not exist.
+
 The agent folder including:
 * Metrics folder including:
 	* Average episode rewards
